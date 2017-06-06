@@ -1,4 +1,4 @@
-## Video Frame Extractor
+## Modification of original old version of Video Frame Extractor
 
 This library extracts frames from a video file using ffmpeg and saves the file to disk.
 
