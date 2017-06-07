@@ -7,7 +7,6 @@ function getMediaInfo(filePath) {
   return new Promise(function(resolve, reject) {
     mediainfo.exec(filePath, function(err, info) {
       if(err) return reject(err);
-      console.log(info);
       return resolve(info);
     });
   });
@@ -48,11 +47,11 @@ module.exports =  {
       getMediaInfo(filePath).then(function(info) {
 	console.log(info.file.track[1]);
 	info = info.file;
-        videoTrack = info.track.filter(function(track) { console.log(track._type);return track._type === "Video"; })[0];
+        videoTrack = info.track.filter(function(track) { return track._type === "Video"; })[0];
 	console.log(videoTrack.frameRate);
         frame =  parseInt(frameNumber);
 
-        command  = 'time ffmpeg -loglevel panic -i ' + filePath +' -s 192x168 -qscale 28 -vf "select=gte(n\\, ' + frame + ')" -vframes '+numOfFrames+' -threads 10 /tmp/' + outputPath + ' -y';
+        command  = 'ffmpeg -loglevel panic -i ' + filePath +' -s 192x168 -qscale 28 -vf "select=gte(n\\, ' + frame + ')" -vframes '+numOfFrames+' -threads 10 /tmp/' + outputPath + ' -y';
         child = exec(command, function (error, stdout, stderr) {
           if (error !== null) {
             console.log('exec error: ' + error);
