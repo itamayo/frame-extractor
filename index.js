@@ -45,7 +45,6 @@ module.exports =  {
       var frame, command, videoTrack, timecodeTrack, startTimecode, fileName;
    
       getMediaInfo(filePath).then(function(info) {
-	console.log(info.file.track[1]);
 	info = info.file;
         videoTrack = info.track.filter(function(track) { return track._type === "Video"; })[0];
 	console.log(videoTrack.frameRate);
