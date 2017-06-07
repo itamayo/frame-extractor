@@ -50,7 +50,7 @@ module.exports =  {
 	console.log(videoTrack.frameRate);
         frame =  parseInt(frameNumber);
 
-        command  = 'ffmpeg -loglevel panic -i ' + filePath +' -s 192x168 -qscale 28 -vf "select=gte(n\\, ' + frame + ')" -vframes '+numOfFrames+' -threads 10 /tmp/' + outputPath + ' -y';
+        command  = 'ffmpeg -loglevel panic -i ' + filePath +' -s 800x640 -qscale 28 -vf "select=gte(n\\, ' + frame + ')" -vframes '+numOfFrames+' -start_number '+frame+' -threads 10 /tmp/' + outputPath + ' -y';
         child = exec(command, function (error, stdout, stderr) {
           if (error !== null) {
             console.log('exec error: ' + error);
