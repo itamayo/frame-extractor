@@ -15,9 +15,10 @@ The output path is the path and the filename where the image should be stored on
 npm install --save frame-extractor
 ```
 ```js
-var videoFrameExtractor = require('video-frame-extractor');
+var frameExtractor = require('frame-extractor');
+//frameExtractor.extractFrame(sourceFilePath, numOfFrames, frameNumber, outputPath);
+frameExtractor.extractFrame('./public/out.webm', "50",120, './public/images/frame%04d.jpg');
 
-videoFrameExtractor.extractFrame(sourceFilePath, numOfFrames, frameNumber, outputPath);
 ```
 
 ### Test
