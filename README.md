@@ -11,9 +11,10 @@ This library extracts frames from a video file using ffmpeg and saves the file t
 
 The output path is the path and the filename where the image should be stored on disk
 
+```bash
+npm install --save frame-extractor
 ```
-npm install --save video-frame-extractor
-
+```js
 var videoFrameExtractor = require('video-frame-extractor');
 
 videoFrameExtractor.extractFrame(sourceFilePath, numOfFrames, frameNumber, outputPath);
@@ -21,8 +22,7 @@ videoFrameExtractor.extractFrame(sourceFilePath, numOfFrames, frameNumber, outpu
 
 ### Test
 
-- Add a video file to test/fixtures
-- Edit the test/index.js and set the time and frames you want
+- Edit the test/index.js and set the frameNumber and frames you want
 
 
 ```
