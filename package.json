@@ -1,17 +1,18 @@
 {
   "name": "frame-extractor",
   "description": "Updated version of video-frame-extractor:Wrapper around ffmpeg to extract an image from a particular time and frame",
-  "version": "0.0.2",
-  "author": [{
-    "name": "Jeanre Swanepoel",
-    "email": "jeanre.swanepoel@ikhasi.co.za",
-    "url": "http://www.ikhasi.co.za"
-  },
-   {
-     "name": "iñigo tamayo",
-    "email": "tamaxx@gmail.com"
-
-   }],
+  "version": "0.0.3",
+  "author": [
+    {
+      "name": "Jeanre Swanepoel",
+      "email": "jeanre.swanepoel@ikhasi.co.za",
+      "url": "http://www.ikhasi.co.za"
+    },
+    {
+      "name": "iñigo tamayo",
+      "email": "tamaxx@gmail.com"
+    }
+  ],
   "url": "https://github.com/itamayo/frame-extractor.git",
   "license": "BSD",
   "repository": {
