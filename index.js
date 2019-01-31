@@ -1,6 +1,5 @@
 var exec = require('child_process').exec,
     Promise = require('bluebird'),
-    _ = require('lodash'),
     mediainfo = require('mediainfo-parser');
 
 function getMediaInfo(filePath) {
