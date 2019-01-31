@@ -37,7 +37,6 @@
   },
   "dependencies": {
     "bluebird": "^2.8.1",
-    "lodash": "^2.4.1",
     "mediainfo": "git://github.com/itamayo/node-mediainfo.git",
     "mediainfo-parser": "^1.1.5"
   }
