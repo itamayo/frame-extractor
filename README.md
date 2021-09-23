@@ -17,7 +17,7 @@ npm install --save frame-extractor
 ```js
 var frameExtractor = require('frame-extractor');
 //frameExtractor.extractFrame(sourceFilePath, numOfFrames, frameNumber, outputPath);
-frameExtractor.extractFrame('https://interactive-examples.mdn.mozilla.net/media/examples/flower.webm', "50",120, 'frame%04d.jpg');
+frameExtractor.extractFrame('http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', "50",120, 'frame%04d.jpg');
 
 ```
 
