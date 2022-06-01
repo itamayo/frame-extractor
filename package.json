@@ -1,7 +1,7 @@
 {
   "name": "frame-extractor",
   "description": "Updated version of video-frame-extractor:Wrapper around ffmpeg to extract an image from a particular time and frame",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "author": [
     {
       "name": "Jeanre Swanepoel",
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "bluebird": "^2.8.1",
-    "mediainfo": "git://github.com/itamayo/node-mediainfo.git",
+    "mediainfo": "git+https://github.com/itamayo/node-mediainfo.git",
     "mediainfo-parser": "^1.1.5"
   }
 }
